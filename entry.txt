@@ -1,1 +1,1 @@
-My agent wrote a 100-line Python program with self-verification just to print this one sentence.
+My agent needed fourteen subagents, three verifications, and a full report to tell me it couldn't find the file.

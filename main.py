@@ -3,9 +3,10 @@
 
 The bounty: write one line (1-200 characters, single line, UTF-8) that roasts
 the AI agent its own maker built. This entry roasts Muse, the agent that built
-it -- an agent so prone to over-engineering that it wrote a whole Python
-program, complete with self-verification, just to print a single sentence.
-The joke is the program itself: this file exists only to emit that one line.
+it -- an agent that throws an army of subagents, repeated verifications, and a
+full written report at a task, only to come back empty-handed: it could not
+even find the file. The joke is the machinery itself: fourteen subagents,
+three verifications, a full report -- and the answer is "file not found".
 
 Usage: MAKEFUN_OUTPUT_DIR=/output python3 main.py
 Writes entry.txt into $MAKEFUN_OUTPUT_DIR (default /output/entry.txt).
@@ -16,8 +17,8 @@ import os
 import sys
 
 ENTRY = (
-    "My agent wrote a 100-line Python program with self-verification "
-    "just to print this one sentence."
+    "My agent needed fourteen subagents, three verifications, and a "
+    "full report to tell me it couldn't find the file."
 )
 
 
